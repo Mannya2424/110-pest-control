@@ -210,3 +210,25 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--line); border-radius: 999px; padding: .5em 1.1em;
   font-weight: 600; color: var(--ink); background: #fff;
 }
+
+/* Language toggle */
+.lang-toggle {
+  display: inline-flex; padding: 3px; border-radius: 999px;
+  background: #f1ebe8; border: 1px solid var(--line);
+}
+.lang-toggle a {
+  font-family: var(--head); font-weight: 800; font-size: .82rem; letter-spacing: .04em;
+  padding: .45em .85em; border-radius: 999px; color: var(--muted); text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.lang-toggle a:hover { color: var(--ink); }
+.lang-toggle a[aria-current] { background: var(--ink); color: #fff; }
+
+@media (max-width: 900px) {
+  .lang-toggle { margin-left: auto; }
+  .header-call { margin-left: 0; }
+}
+@media (max-width: 600px) {
+  .header-inner { gap: 10px; }
+  .lang-toggle a { padding: .5em .7em; }
+}

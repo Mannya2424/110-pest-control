@@ -4,7 +4,7 @@ Website for 110 Pest Control Services, a family-owned, licensed pest control com
 
 Plain HTML and CSS, no build step. Open `index.html` in a browser to preview.
 
-- `index.html` holds all page content
+- `index.html` is the English page and `es/index.html` is the Spanish page. When you change wording, update both.
 - `styles.css` holds the styling
 - `images/` holds photos and logos
 
