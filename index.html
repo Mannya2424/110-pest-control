@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
@@ -172,7 +172,6 @@
           <circle stroke="none" class="wash" style="--d:2.85s;--o:1" fill="#8a5a32" cx="466.5" cy="174.6" r="4.4"/>
           <circle stroke="none" class="wash" style="--d:2.85s;--o:1" fill="#8a5a32" cx="476.4" cy="175.7" r="4.4"/>
           <circle stroke="none" class="wash" style="--d:2.85s;--o:1" fill="#8a5a32" cx="472" cy="180.1" r="4.4"/>
-          <path stroke="none" class="wash" style="--d:2.0s;--o:0.9" fill="#ffffff" d="M130 404 m-28 0 a28 28 0 1 0 56 0 a28 28 0 1 0 -56 0"/>
         </g>
         <g filter="url(#rough)">
           <path class="draw" style="--d:0.1s" pathLength="1" d="M436 86 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0"/>
@@ -243,14 +242,131 @@
           <path class="draw thin leaf" style="--d:1.7500000000000002s" pathLength="1" d="M491 147.9 L502.8 151.9 M491 147.9 L489.1 135.6 M502 140.1 L511.8 145.6 M502 140.1 L502.3 128.8 M512.7 135.6 L520 142.5 M512.7 135.6 L515.4 125.9 M523 134.3 L527.3 142.1 M523 134.3 L527.9 126.9 M533.1 136.3 L534.5 143.8 M533.1 136.3 L539 131.4"/>
           <path class="draw thin rib" style="--d:1.53s" pathLength="1" d="M472 168 Q519.3 142.1 558.1 188.4"/>
           <path class="draw thin leaf" style="--d:1.83s" pathLength="1" d="M495.1 159.6 L503.3 169 M495.1 159.6 L499.6 148 M508.5 158.8 L513.6 168.9 M508.5 158.8 L514.9 149.6 M521.5 161.4 L523.7 171.2 M521.5 161.4 L529.1 154.7 M534.1 167.1 L534.1 176 M534.1 167.1 L541.9 162.9 M546.3 176.1 L544.9 183.7 M546.3 176.1 L553.6 173.8"/>
-          <g transform="translate(111 384) scale(.6)"><path class="draw" style="--d:1.8s" pathLength="1" d="M32 14 C 42 14 46 26 46 36 C 46 48 40 54 32 54 C 24 54 18 48 18 36 C 18 26 22 14 32 14 Z M26 14 C 26 9 38 9 38 14 M29 10 C 24 2 16 4 12 6 M35 10 C 40 2 48 4 52 6 M32 18 V52 M19 30 L10 24 M18 38 L8 38 M20 46 L11 54 M45 30 L54 24 M46 38 L56 38 M44 46 L53 54"/></g>
-          <path stroke="#c4161c" class="draw r" style="--d:2.6s" pathLength="1" d="M130 404 m-28 0 a28 28 0 1 0 56 0 a28 28 0 1 0 -56 0 M110 384 L150 424"/>
         </g>
       </svg>
       <svg fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="sketch hero-fly" viewBox="0 0 560 440" aria-hidden="true">
-        <path id="loop" stroke="#c4161c" stroke-width="2" stroke-dasharray="3 9" class="trail fade r" style="--d:3s" d="M280 116 C 430 116 548 190 540 268 C 532 340 420 350 280 350 C 140 350 28 340 22 268 C 16 190 130 116 280 116Z"/>
+        <path id="flight" stroke="none" d="M150 150 C 200 92 290 132 330 104 C 380 70 470 96 446 152 C 426 198 360 168 312 182 C 252 200 220 150 180 176 C 140 202 96 196 150 150Z"/>
+        <path id="antpath" stroke="none" d="M178 440 C 196 424 224 412 250 404 C 262 398 268 386 276 374"/>
+        <g class="fade" style="--d:2.6s">
+          <g transform="translate(104 410) scale(0.95 0.95)">
+            <g class="tech-body" filter="url(#rough)">
+              <path d="M-14 -36 h10 v24 h-10 Z" fill="#d7dade" stroke-width="1.6"/>
+              <path d="M-12 -36 C -12 -42 -6 -42 -6 -36" stroke-width="1.6"/>
+              <path d="M-9 -12 C -6 2 14 4 20 -38" stroke="#c4161c" stroke-width="2"/>
+              <path d="M-9 -54 L-11 -36" stroke-width="5" stroke="#f4c9d2"/>
+              <path d="M-10 0 L-8 -30 H8 L10 0 H3 L0 -18 L-3 0 Z" fill="#8f949b" stroke-width="1.6"/>
+              <path d="M-12 -30 L-10 -55 C -5 -58 5 -58 10 -55 L12 -30 Z" fill="#f4c9d2" stroke-width="1.6"/>
+              <path d="M-4 -56 L0 -50 L4 -56" stroke-width="1.2"/>
+              <path d="M8 -53 C 14 -48 18 -44 22 -41" stroke="#f4c9d2" stroke-width="5"/>
+              <path d="M8 -53 C 14 -48 18 -44 22 -41" stroke-width="1.2" stroke-opacity=".5"/>
+              <circle cx="23" cy="-40" r="3.2" fill="#3fbf9b" stroke-width="1.2"/>
+              <circle cx="-11.5" cy="-35" r="3" fill="#3fbf9b" stroke-width="1.2"/>
+              <path d="M23 -40 L46 -34" stroke="#6b7076" stroke-width="2.2"/>
+              <circle cx="0" cy="-64" r="8.5" fill="#e3ad86" stroke-width="1.6"/>
+              <path d="M-8.5 -66 C -9.5 -78 9.5 -78 8.5 -66 C 6 -71 -6 -71 -8.5 -66Z" fill="#8c8c8c" stroke-width="1.4"/>
+              <circle cx="4" cy="-65" r="1" fill="#141414" stroke="none"/>
+              <path d="M2 -60 q2 1.5 4 0" stroke-width="1"/>
+              <ellipse cx="-6" cy="1" rx="5" ry="2.4" fill="#141414" stroke="none"/>
+              <ellipse cx="7" cy="1" rx="5" ry="2.4" fill="#141414" stroke="none"/>
+            </g>
+            <g class="spray" stroke="#7fc4dd" stroke-width="1.6">
+              <path class="puff p1" d="M49 -34 l10 -4 M49 -33 l11 0 M49 -32 l10 4"/>
+              <path class="puff p2" d="M50 -35 l9 -7 M50 -33 l12 -2 M50 -31 l11 5"/>
+              <circle class="puff p3" cx="58" cy="-36" r="1.6" fill="#7fc4dd" stroke="none"/>
+              <circle class="puff p1" cx="62" cy="-30" r="1.3" fill="#7fc4dd" stroke="none"/>
+              <circle class="puff p2" cx="60" cy="-41" r="1.2" fill="#7fc4dd" stroke="none"/>
+            </g>
+          </g>
+          <g transform="translate(456 410) scale(-0.95 0.95)">
+            <g class="tech-body" filter="url(#rough)">
+              <path d="M-14 -36 h10 v24 h-10 Z" fill="#d7dade" stroke-width="1.6"/>
+              <path d="M-12 -36 C -12 -42 -6 -42 -6 -36" stroke-width="1.6"/>
+              <path d="M-9 -12 C -6 2 14 4 20 -38" stroke="#c4161c" stroke-width="2"/>
+              <path d="M-9 -54 L-11 -36" stroke-width="5" stroke="#f4c9d2"/>
+              <path d="M-10 0 L-8 -30 H8 L10 0 H3 L0 -18 L-3 0 Z" fill="#8f949b" stroke-width="1.6"/>
+              <path d="M-12 -30 L-10 -55 C -5 -58 5 -58 10 -55 L12 -30 Z" fill="#f4c9d2" stroke-width="1.6"/>
+              <path d="M-4 -56 L0 -50 L4 -56" stroke-width="1.2"/>
+              <path d="M8 -53 C 14 -48 18 -44 22 -41" stroke="#f4c9d2" stroke-width="5"/>
+              <path d="M8 -53 C 14 -48 18 -44 22 -41" stroke-width="1.2" stroke-opacity=".5"/>
+              <circle cx="23" cy="-40" r="3.2" fill="#3fbf9b" stroke-width="1.2"/>
+              <circle cx="-11.5" cy="-35" r="3" fill="#3fbf9b" stroke-width="1.2"/>
+              <path d="M23 -40 L46 -34" stroke="#6b7076" stroke-width="2.2"/>
+              <circle cx="0" cy="-64" r="8.5" fill="#e3ad86" stroke-width="1.6"/>
+              <path d="M-8.5 -67 C -9 -79 9 -79 8.5 -67 C 5 -71 -5 -71 -8.5 -67Z" fill="#2a2a2a" stroke-width="1.4"/><path d="M-8.6 -69 C -4 -73 4 -73 8.6 -69" stroke="#2a2a2a" stroke-width="4"/><circle cx="-10" cy="-70" r="4.5" fill="#2a2a2a" stroke-width="1.2"/>
+              <circle cx="4" cy="-65" r="1" fill="#141414" stroke="none"/>
+              <path d="M2 -60 q2 1.5 4 0" stroke-width="1"/>
+              <ellipse cx="-6" cy="1" rx="5" ry="2.4" fill="#141414" stroke="none"/>
+              <ellipse cx="7" cy="1" rx="5" ry="2.4" fill="#141414" stroke="none"/>
+            </g>
+            <g class="spray" stroke="#7fc4dd" stroke-width="1.6">
+              <path class="puff p1" d="M49 -34 l10 -4 M49 -33 l11 0 M49 -32 l10 4"/>
+              <path class="puff p2" d="M50 -35 l9 -7 M50 -33 l12 -2 M50 -31 l11 5"/>
+              <circle class="puff p3" cx="58" cy="-36" r="1.6" fill="#7fc4dd" stroke="none"/>
+              <circle class="puff p1" cx="62" cy="-30" r="1.3" fill="#7fc4dd" stroke="none"/>
+              <circle class="puff p2" cx="60" cy="-41" r="1.2" fill="#7fc4dd" stroke="none"/>
+            </g>
+          </g>
+        </g>
+        <g class="fade" style="--d:2.8s">
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="0.00s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="0.00s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-1.43s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-1.43s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-2.86s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-2.86s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-4.29s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-4.29s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-5.71s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-5.71s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-7.14s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-7.14s" repeatCount="indefinite"/>
+          </g>
+          <g><g class="ant"><path d="M3 -2.5 Q 6 -6 8 -5.5 M3 2.5 Q 6 6 8 5.5" stroke-width=".8"/>
+            <path class="legs" d="M-3 0 L-6 -4 M-3 0 L-6 4 M0 0 L0 -4.5 M0 0 L0 4.5 M2 0 L4 -4 M2 0 L4 4" stroke-width=".8"/>
+            <ellipse cx="-5" cy="0" rx="3.4" ry="2.4" fill="#141414" stroke="none"/>
+            <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#141414" stroke="none"/>
+            <circle cx="3" cy="0" r="1.9" fill="#141414" stroke="none"/></g>
+            <animateMotion dur="10s" begin="-8.57s" repeatCount="indefinite" rotate="auto"><mpath href="#antpath"/></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="10s" begin="-8.57s" repeatCount="indefinite"/>
+          </g>
+        </g>
         <g class="fade" style="--d:3s">
-          <g class="ladybug" transform="scale(1.25)">
+          <g class="bob"><g class="ladybug" transform="scale(1.25)">
             <path d="M14 -4 Q 22 -14 29 -13 M14 4 Q 22 14 29 13" stroke-width="2"/>
             <ellipse class="wing" cx="-3" cy="-12" rx="11" ry="6" fill="#fff" fill-opacity=".75" stroke-width="1.5"/>
             <ellipse class="wing wing-b" cx="-3" cy="12" rx="11" ry="6" fill="#fff" fill-opacity=".75" stroke-width="1.5"/>
@@ -263,28 +379,8 @@
             <circle cx="-6" cy="6" r="3" fill="#141414" stroke="none"/>
             <circle cx="5" cy="-7" r="2.6" fill="#141414" stroke="none"/>
             <circle cx="5" cy="7" r="2.6" fill="#141414" stroke="none"/>
-          </g>
-          <animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#loop"/></animateMotion>
-        </g>
-      </svg>
-      <svg fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="sketch hero-fly" viewBox="0 0 560 440" aria-hidden="true">
-        <path id="loop" stroke="#c4161c" stroke-width="2" stroke-dasharray="3 9" class="trail fade r" style="--d:3s" d="M280 116 C 430 116 548 190 540 268 C 532 340 420 350 280 350 C 140 350 28 340 22 268 C 16 190 130 116 280 116Z"/>
-        <g class="fade" style="--d:3s">
-          <g class="ladybug" transform="scale(1.25)">
-            <path d="M14 -4 Q 22 -14 29 -13 M14 4 Q 22 14 29 13" stroke-width="2"/>
-            <ellipse class="wing" cx="-3" cy="-12" rx="11" ry="6" fill="#fff" fill-opacity=".75" stroke-width="1.5"/>
-            <ellipse class="wing wing-b" cx="-3" cy="12" rx="11" ry="6" fill="#fff" fill-opacity=".75" stroke-width="1.5"/>
-            <circle cx="14" cy="0" r="7" fill="#141414"/>
-            <circle cx="17" cy="-3" r="1.6" fill="#fff" stroke="none"/>
-            <circle cx="17" cy="3" r="1.6" fill="#fff" stroke="none"/>
-            <ellipse cx="0" cy="0" rx="16" ry="13" fill="#c4161c"/>
-            <path d="M-15 0 H13" stroke-width="2"/>
-            <circle cx="-6" cy="-6" r="3" fill="#141414" stroke="none"/>
-            <circle cx="-6" cy="6" r="3" fill="#141414" stroke="none"/>
-            <circle cx="5" cy="-7" r="2.6" fill="#141414" stroke="none"/>
-            <circle cx="5" cy="7" r="2.6" fill="#141414" stroke="none"/>
-          </g>
-          <animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath href="#loop"/></animateMotion>
+          </g></g>
+          <animateMotion dur="14s" repeatCount="indefinite" rotate="auto"><mpath href="#flight"/></animateMotion>
         </g>
       </svg>
       </div>
