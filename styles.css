@@ -200,3 +200,13 @@ p { margin: 0 0 1em; }
   .mb-call { background: var(--red); color: #fff; }
   .mb-quote { background: var(--ink); color: #fff; }
 }
+
+/* Service area */
+.area { margin-top: 40px; text-align: center; }
+.area h3 { font-size: 1.5rem; margin-bottom: .25em; }
+.area p { color: var(--muted); }
+.area-list { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.area-list li {
+  border: 1px solid var(--line); border-radius: 999px; padding: .5em 1.1em;
+  font-weight: 600; color: var(--ink); background: #fff;
+}
