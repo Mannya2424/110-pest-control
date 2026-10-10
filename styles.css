@@ -319,3 +319,7 @@ p { margin: 0 0 1em; }
   .hero-fly .bob, .hero-fly .ant .legs { animation: none; }
   .hero-fly .puff { animation: none; opacity: .7; }
 }
+
+/* About without a photo */
+.about { grid-template-columns: 1fr; max-width: 760px; text-align: center; }
+.about .why { text-align: left; }
