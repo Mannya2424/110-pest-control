@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=3">
+  <link rel="stylesheet" href="../styles.css?v=4">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -465,27 +465,26 @@
         </ul>
       </div>
 
-      <form class="quote-form" action="https://formsubmit.co/pestcontrol110@outlook.com" method="POST">
-        <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto (sitio en español)">
-        <input type="hidden" name="_template" value="table">
+      <form class="quote-form" id="quote-form" action="APPS_SCRIPT_URL" method="POST" data-sending="Enviando..." data-error="Algo salió mal. Por favor llame o envíe un texto al 786-368-3883.">
+        <input type="hidden" name="lang" value="es">
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <label>Nombre
-          <input type="text" name="nombre" autocomplete="name" required>
+          <input type="text" name="name" autocomplete="name" required>
         </label>
         <div class="form-row">
           <label>Teléfono
-            <input type="tel" name="telefono" autocomplete="tel" required>
+            <input type="tel" name="phone" autocomplete="tel" required>
           </label>
           <label>Correo electrónico
             <input type="email" name="email" autocomplete="email">
           </label>
         </div>
         <label>Ciudad o código postal
-          <input type="text" name="ubicacion" autocomplete="postal-code">
+          <input type="text" name="location" autocomplete="postal-code">
         </label>
         <label>¿Qué plaga tiene?
-          <select name="plaga">
+          <select name="pest">
             <option>Cucarachas / Hormigas</option>
             <option>Roedores</option>
             <option>Mosquitos</option>
@@ -496,10 +495,15 @@
           </select>
         </label>
         <label>¿Algo más que debamos saber?
-          <textarea name="mensaje" rows="4"></textarea>
+          <textarea name="message" rows="4"></textarea>
         </label>
+        <label class="check"><input type="checkbox" name="optin" value="yes"> <span>Envíenme consejos de prevención de plagas y ofertas por correo</span></label>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Pedir mi presupuesto gratis</button>
+        <p class="form-status" role="status" hidden></p>
       </form>
+      <div class="form-thanks" id="form-thanks" hidden>
+        <p><strong>¡Gracias! Recibimos su solicitud.</strong> Le llamaremos o le enviaremos un texto pronto. ¿Lo necesita antes? Llame al 786-368-3883.</p>
+      </div>
     </div>
   </section>
 
@@ -545,6 +549,30 @@
     });
   }, { threshold: 0.35 });
   sketches.forEach(function (s) { io.observe(s); });
+})();
+</script>
+<script>
+(function () {
+  var form = document.getElementById('quote-form');
+  if (!form || form.getAttribute('action').indexOf('https://script.google.com/') !== 0) return;
+  var status = form.querySelector('.form-status');
+  var btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = form.dataset.sending;
+    fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+      .then(function () {
+        form.hidden = true;
+        var thanks = document.getElementById('form-thanks');
+        thanks.hidden = false;
+        thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function () {
+        status.hidden = false; status.textContent = form.dataset.error;
+        btn.disabled = false; btn.textContent = label;
+      });
+  });
 })();
 </script>
 </body>

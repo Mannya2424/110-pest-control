@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
@@ -488,9 +488,8 @@
         </ul>
       </div>
 
-      <form class="quote-form" action="https://formsubmit.co/pestcontrol110@outlook.com" method="POST">
-        <input type="hidden" name="_subject" value="New quote request from the website">
-        <input type="hidden" name="_template" value="table">
+      <form class="quote-form" id="quote-form" action="APPS_SCRIPT_URL" method="POST" data-sending="Sending..." data-error="Something went wrong. Please call or text us at 786-368-3883.">
+        <input type="hidden" name="lang" value="en">
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <label>Name
@@ -521,8 +520,13 @@
         <label>Anything else we should know?
           <textarea name="message" rows="4"></textarea>
         </label>
+        <label class="check"><input type="checkbox" name="optin" value="yes"> <span>Send me pest prevention tips and offers by email</span></label>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Request My Free Quote</button>
+        <p class="form-status" role="status" hidden></p>
       </form>
+      <div class="form-thanks" id="form-thanks" hidden>
+        <p><strong>Thanks! We got your request.</strong> We'll call or text you soon. Need us sooner? Call 786-368-3883.</p>
+      </div>
     </div>
   </section>
 
@@ -568,6 +572,30 @@
     });
   }, { threshold: 0.35 });
   sketches.forEach(function (s) { io.observe(s); });
+})();
+</script>
+<script>
+(function () {
+  var form = document.getElementById('quote-form');
+  if (!form || form.getAttribute('action').indexOf('https://script.google.com/') !== 0) return;
+  var status = form.querySelector('.form-status');
+  var btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = form.dataset.sending;
+    fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+      .then(function () {
+        form.hidden = true;
+        var thanks = document.getElementById('form-thanks');
+        thanks.hidden = false;
+        thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function () {
+        status.hidden = false; status.textContent = form.dataset.error;
+        btn.disabled = false; btn.textContent = label;
+      });
+  });
 })();
 </script>
 </body>

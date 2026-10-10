@@ -301,3 +301,15 @@ p { margin: 0 0 1em; }
 .sketch .rib { stroke: #2f5d36; stroke-width: 1.6; }
 .sketch .leaf { stroke: #2f5d36; stroke-width: 1; }
 .sketch .wash { stroke: none; }
+
+/* Quote form extras */
+.quote-form .check { display: flex; align-items: flex-start; gap: 10px; font-weight: 500; color: var(--text); }
+.quote-form .check input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--red); }
+.form-status { margin: 0; color: var(--red); font-weight: 600; }
+.form-thanks {
+  background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 32px;
+  box-shadow: var(--shadow); font-size: 1.1rem; align-self: start;
+}
+.form-thanks p { margin: 0; }
+.form-thanks strong { display: block; font-family: var(--head); font-size: 1.4rem; color: var(--ink); margin-bottom: .4em; }
+[hidden] { display: none !important; }
