@@ -11,4 +11,4 @@ Plain HTML and CSS, no build step. Open `index.html` in a browser to preview.
 ## Before launch
 
 - The quote form uses FormSubmit (formsubmit.co). The first time someone submits it, FormSubmit sends an activation email to pestcontrol110@outlook.com. Click the link in that email so later submissions get delivered.
-- To add social links, put the real URLs in the `socials` block in the footer of `index.html` and remove its `hidden` attribute.
+- Social links live in the `socials` block in the footer of both pages. Add new ones next to the Facebook link.

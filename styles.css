@@ -158,7 +158,13 @@ p { margin: 0 0 1em; }
 .footer-text p { margin: 0 0 .6em; }
 .footer-text strong { color: #fff; }
 .site-footer a { color: #fff; }
-.socials { display: flex; gap: 18px; }
+.socials { display: flex; gap: 12px; margin: 14px 0; }
+.socials a {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  background: #2a2a2a; color: #fff; border-radius: 999px; padding: .5em 1em .5em .8em;
+  font-weight: 600; font-size: .92rem; transition: background .15s;
+}
+.socials a:hover { background: var(--red); }
 .socials[hidden] { display: none; }
 .fine { font-size: .85rem; color: #8a8a8a; }
 
