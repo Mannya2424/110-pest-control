@@ -171,6 +171,7 @@ def page(lang, en_url, es_url, title, desc, body, jsonld=None):
 
 <div class="mobile-bar">
   <a href="{TEL}" class="mb-call">{t['mb_call']}</a>
+  {MB_WA[lang]}
   <a href="{page_path('contact', lang)}" class="mb-quote">{t['mb_quote']}</a>
 </div>
 
@@ -178,6 +179,10 @@ def page(lang, en_url, es_url, title, desc, body, jsonld=None):
 </body>
 </html>
 '''
+
+
+MSG_ROW = {l: grab(r'<p class="msg-row">.*?</p>', SRC[l]) for l in ("en", "es")}
+MB_WA = {l: grab(r'<a class="mb-wa"[^>]*>WhatsApp</a>', SRC[l]) for l in ("en", "es")}
 
 
 def page_hero(lang, crumbs, h1, lead, icon=""):
@@ -194,6 +199,7 @@ def page_hero(lang, crumbs, h1, lead, icon=""):
           <a class="btn btn-primary btn-lg" href="{TEL}">{t['call_now']}</a>
           <a class="btn btn-outline btn-lg" href="{page_path('contact', lang)}">{t['free_quote']}</a>
         </div>
+        {MSG_ROW[lang]}
       </div>{side}
     </div>
   </section>'''
