@@ -294,7 +294,7 @@ def build_services(lang):
     write(p["path"], page(lang, PAGES["services"]["en"]["path"], PAGES["services"]["es"]["path"], p["title"], p["desc"], body))
 
 
-def build_about(lang):
+def build_about(lang):  # unused: About lives on the homepage (#about)
     p, t = PAGES["about"][lang], UI[lang]
     crumbs = [(t["home"], HOME[lang]), (t["about"], None)]
     body = f'''{page_hero(lang, crumbs, p['h1'], p['lead'])}
@@ -352,7 +352,7 @@ def update_home(lang):
 
 def build_sitemap():
     pairs = [("/", "/es/")]
-    pairs += [(PAGES[k]["en"]["path"], PAGES[k]["es"]["path"]) for k in ("services", "about", "contact")]
+    pairs += [(PAGES[k]["en"]["path"], PAGES[k]["es"]["path"]) for k in ("services", "contact")]
     pairs += [(service_path(i, "en"), service_path(i, "es")) for i in range(len(SERVICES))]
     urls = []
     for en, es in pairs:
@@ -371,7 +371,6 @@ if __name__ == "__main__":
         for i in range(len(SERVICES)):
             build_service(i, lang)
         build_services(lang)
-        build_about(lang)
         build_contact(lang)
         update_home(lang)
     print("pages in sitemap:", build_sitemap())

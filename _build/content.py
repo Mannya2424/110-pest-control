@@ -223,11 +223,11 @@ PAGES = {
                "lead": "Sea cual sea la plaga, inspeccionamos, tratamos y damos seguimiento hasta resolverlo. Servimos Broward, Miami-Dade y todo el Sur de Florida."},
     },
     "about": {
-        "en": {"path": "/about/", "title": "About Us | 110 Pest Control Services",
+        "en": {"path": "/#about", "title": "About Us | 110 Pest Control Services",
                "desc": "A family-owned, licensed pest control company serving Broward, Miami-Dade and all of South Florida. Learn the story behind the name 110.",
                "h1": "About 110 Pest Control",
                "lead": "A family-owned, licensed pest control company serving Broward, Miami-Dade and all of South Florida."},
-        "es": {"path": "/es/nosotros/", "title": "Sobre nosotros | 110 Pest Control Services",
+        "es": {"path": "/es/#about", "title": "Sobre nosotros | 110 Pest Control Services",
                "desc": "Una compañía de control de plagas familiar y con licencia que sirve a Broward, Miami-Dade y todo el Sur de Florida. Conozca la historia del nombre 110.",
                "h1": "Sobre 110 Pest Control",
                "lead": "Una compañía de control de plagas familiar y con licencia que sirve a Broward, Miami-Dade y todo el Sur de Florida."},

@@ -21,16 +21,6 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://110pestcontrol.com/es/servicios/"/>
   </url>
   <url>
-    <loc>https://110pestcontrol.com/about/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://110pestcontrol.com/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://110pestcontrol.com/es/nosotros/"/>
-  </url>
-  <url>
-    <loc>https://110pestcontrol.com/es/nosotros/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://110pestcontrol.com/about/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://110pestcontrol.com/es/nosotros/"/>
-  </url>
-  <url>
     <loc>https://110pestcontrol.com/contact/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://110pestcontrol.com/contact/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://110pestcontrol.com/es/contacto/"/>
