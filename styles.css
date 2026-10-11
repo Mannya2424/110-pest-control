@@ -330,7 +330,7 @@ p { margin: 0 0 1em; }
   background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--red);
   border-radius: var(--radius); padding: 20px 22px; margin: 0 0 24px;
 }
-.ladybug-icon { width: 52px; height: 52px; flex: none; margin-top: 2px; }
+.ladybug-icon { width: 96px; height: auto; flex: none; margin-top: 2px; }
 .ladybug-note h3 { margin: 0 0 .3em; font-size: 1.15rem; }
 .ladybug-note p { margin: 0; color: var(--muted); font-size: .98rem; }
-@media (max-width: 600px) { .ladybug-note { padding: 18px; gap: 14px; } .ladybug-icon { width: 42px; height: 42px; } }
+@media (max-width: 600px) { .ladybug-note { padding: 18px; gap: 14px; } .ladybug-icon { width: 68px; } }
