@@ -413,3 +413,4 @@ p { margin: 0 0 1em; }
   .mb-wa { background: #128c4a; color: #fff; }
 }
 @media (max-width: 600px) { .mobile-bar a { font-size: .95rem; } }
+.why:has(> .why-item:only-child) { grid-template-columns: 1fr; }
